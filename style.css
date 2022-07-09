@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*{outline: none;box-sizing: border-box;margin: 0;padding: 0;}
+html{padding: 0;margin: 0;}body{margin: 0;padding: 0;background-color: #111111;overflow-x: hidden;}
+a{text-decoration: none;color: unset;}
+@font-face {
+    font-family: 'Glorify';
+    src: url(media/Glorify.otf);
+}
+/* ScrollBar_____________________________ */
+* {
+    --scrollbarBG: #111111;
+    --thumbBG: #998060;
+  }
+  * *::-webkit-scrollbar {
+    width: 3px;
+  
+  }
+ * {
+    scrollbar-width:thick;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+   *::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  
+  }
+ *::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+  }
+/* -NAV- */
+nav{
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    background-color: rgb(3, 3, 3);
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5vw;
+}
+nav img{width: 140px;}
+/* -- */
+
+/* Nav F */
+.landing{
+    font-family: 'Glorify', serif;
+    background: url('media/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% -4.5vh;
+    height: 125vh;
+    width: 100vw;
+    color: #998060;
+}
+/* --Divider */
+.divider{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7vh 0;
+}
+.divider img{
+    width: 45vw;
+}
+.mainText h1{
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.mainText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 65vh;
+}
+/* ---Artist Snaps */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/* ----Snaps */
+.snap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: auto;
+    overflow: none;
+    flex-direction: row;
+}
+.snap .snapBox{
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+.snapBox img{
+    width: 30vw;
+    border-top: 3px solid #998060;
+    border-left: 3px solid #998060;
+    border-right: 3px solid #998060;
+}
+.boxText{
+    margin-top: -5px;
+    background: rgb(153, 128, 96);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    letter-spacing: 0.5px;
+}
+.boxText h3{font-weight: 500;font-size: 16px;margin-bottom: 3px;}
+.boxText h4{opacity: 0.8; font-weight: 400; font-size: 14px;}
+/* --Footer-- */
+.ftDivider{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 100vw;
+}
+.ftLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ftLogo img:nth-of-type(1){
+    width: 150px;
+    margin-top: -4vh;
+}
+.ftLogo img:nth-of-type(2){
+    width: 300px;
+    margin: 15px 0 25px 0;
+}
+.ftNav{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.ftNav a{
+    margin:0 7px;
+    transition: 0.2s ease-in-out;
+}
+.ftNav a:hover{
+    color: white;
+    margin-top: -2px;
+}
+footer{
+    height: 35vh;
+    background-color: #340068;
+}
+/* --Bottom bar | DSWARE-- */
+.ftBtm{
+    height: 10vh;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    padding: 2px 3vw;
+}
+.ftBtm address{
+    opacity: 0.7;
+    width: 30%;
+}
+.ftBtm img{width: 50px;}
+.ftBtm address:nth-of-type(2){
+    opacity: 0.5;
+    float: right;
+    text-align: right;
+}
+
+@media only screen and (max-width:800px) {
+    nav img{
+        width: 125px;
+    }
+    .landing{
+        background: url('media/bgRes.png');
+        background-size: 100%;
+        background-position: 0% 1.5vh;
+        height: 75vh;
+        background-repeat: no-repeat;
+        width: 100vw;
+    }
+    .snap .snapBox{
+        width: auto;
+        height: auto;
+        margin: 3px;
+    }
+    .snapBox img{
+        height: unset !important;
+        width: 48vw;
+        border-top: 3px solid #998060;
+        border-left: 3px solid #998060;
+        border-right: 3px solid #998060;
+    }
+    .divider{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh 0;
+    }
+    .divider img{
+        width: 90vw;
+    }
+    .mainText{
+        height: 52vh;
+    }
+    .mainText h1{
+        font-size: 44px;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+    .mainText p{
+        padding: 0 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* -- */
+    .ftLogo img:nth-of-type(1){
+        width: 100px;
+        margin-top: 2vh;
+    }
+    .ftLogo img:nth-of-type(2){
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ftNav{
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .ftNav a{
+        margin: 0 6px;
+    }
+    .ftBtm{
+        height: 9vh;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .ftBtm img{
+        padding: 10px 0;
+        width: 40px;
+        display: none;
+    }
+    .ftBtm address {
+        padding-bottom: 5px;
+        opacity: 0.7;
+        width: 100%;
+        text-align: center !important;
+    }
+}
