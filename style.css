@@ -33,26 +33,26 @@ nav{
     position: sticky;
     top: 0;
     background-color: rgb(3, 3, 3);
-    height: 6vh;
+    height: 5vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5vw;
 }
-nav img{width: 140px;}
+nav img{width:260px;}
 /* -- */
 
 /* Nav F */
 .landing{
     font-family: 'Glorify', serif;
+    color: #998060;
     background: url('media/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% -4.5vh;
     height: 125vh;
     width: 100vw;
-    color: #998060;
 }
 /* --Divider */
 .divider{
@@ -79,10 +79,63 @@ nav img{width: 140px;}
     width: 100vw;
     height: 65vh;
 }
+/* Artist Profiles */
+.artistProfiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    width: 94vw;
+    margin: auto;
+    overflow: auto;
+    flex-direction: row;
+}
+.artistProfiles div {
+    width: 180px;
+    height: 210px;
+    margin: 5px;
+}
+.artistProfiles a img{width: 100%;}
 /* ---Artist Snaps */
 .row{
     display: flex;
     flex-direction: row;
+}
+.artistProfiles a h4{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Glorify', serif;
+    font-weight: 500;
+    color: #B49B7B;
+    opacity: 0.6;
+    transition: 0.2s ease-in-out;
+}
+.artistProfiles a:hover h4{
+    opacity: 1;
+}
+/* Project Backgorund */
+.background{
+    width: 92vw;
+    margin: 6vh auto;
+}
+.background h2{
+    padding: 0 0 10px 10px;
+    font-size: 35px;
+    font-family: 'Glorify', serif;
+    font-weight: 500;
+    color: #B49B7B;
+}
+.background p{
+    padding: 20px;
+    background-color: #1F003F;
+    border: 2px solid #8F22FF;
+    font-family: 'Glorify', serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 125%;
+    border-radius: 12px;
+    color: #B49B7B;
 }
 /* ----Snaps */
 .snap{
@@ -195,7 +248,7 @@ footer{
     opacity: 0.7;
     width: 30%;
 }
-.ftBtm img{width: 50px;}
+.ftBtm img{width: 40px;}
 .ftBtm address:nth-of-type(2){
     opacity: 0.5;
     float: right;
@@ -204,13 +257,13 @@ footer{
 
 @media only screen and (max-width:800px) {
     nav img{
-        width: 125px;
+        width: 240px;
     }
     .landing{
         background: url('media/bgRes.png');
         background-size: 100%;
         background-position: 0% 1.5vh;
-        height: 75vh;
+        height: 70vh;
         background-repeat: no-repeat;
         width: 100vw;
     }
@@ -282,5 +335,23 @@ footer{
         opacity: 0.7;
         width: 100%;
         text-align: center !important;
+    }
+    .artistProfiles div {
+        width: 110px;
+        height: 140px;
+    }
+    .background h2 {
+        padding: 0 0 10px 10px;
+        font-size: 25px;
+    }
+    .background p {
+        padding: 10px;
+        border: 2px solid #8F22FF;
+        font-family: 'Glorify', serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 125%;
+        border-radius: 12px;
+        color: #B49B7B;
     }
 }
