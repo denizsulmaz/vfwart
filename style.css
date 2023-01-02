@@ -54,6 +54,19 @@ nav img{width:260px;}
     height: 125vh;
     width: 100vw;
 }
+.landing a{
+    border-radius: 30px;
+    margin-top: 5vh;
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: #8F22FF;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+.landing a:hover{
+    background-color: white;
+    color: #8F22FF;
+}
 /* --Divider */
 .divider{
     width: 100vw;
@@ -90,6 +103,7 @@ nav img{width:260px;}
     margin: auto;
     overflow: auto;
     flex-direction: row;
+    display: none !important; /* during open call */
 }
 .artistProfiles div {
     width: 180px;
@@ -148,6 +162,8 @@ nav img{width:260px;}
     height: auto;
     overflow: none;
     flex-direction: row;
+    display: none !important; /* during open call */
+
 }
 .snap .snapBox{
     width: auto;
